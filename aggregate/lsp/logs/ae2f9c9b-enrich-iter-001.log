@@ -1,0 +1,113 @@
+[2026-10-03T10:35:20Z] === ENRICH ITERATION 1 START | repo=modelcontextprotocol/rust-sdk sha=ae2f9c9b ===
+[2026-10-03T10:35:20Z] [iter=1] PHASE START: enrich repo=modelcontextprotocol/rust-sdk sha=ae2f9c9b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ae2f9c9b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ae2f9c9b45a2c98d24ee345406e79f507c9f9282.nq.gz
+[2026-10-03T10:35:20Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-10-03T10:35:49Z] [iter=1] AST store loaded triples=3119418 load_secs=27 mem_mb=997 MB
+[2026-10-03T10:35:49Z] [iter=1] Step 2: Finding LSP targets mem_mb=997 MB
+[2026-10-03T10:35:57Z] [iter=1] LSP targets found call_sites=32158 imports=487 extends=0 implements=501 secs=8
+[2026-10-03T10:36:02Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=997 MB
+[2026-10-03T10:36:22Z] [iter=1] Position index built positions=210448 nodes_with_types=261840 secs=20 mem_mb=997 MB
+[2026-10-03T10:36:22Z] [iter=1] Step 3: Starting LSP resolution mem_mb=997 MB already_completed_types=[] already_completed_files=0
+[2026-10-03T10:36:22Z] [iter=1] Resolving target type target_type=call_site count=32158
+[2026-10-03T10:37:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=0 resolved=0 errors=0 current=examples/servers/src/mrtr.rs
+[2026-10-03T10:38:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.6 files_done=1 resolved=56 errors=31 current=crates/rmcp/src/model/meta.rs
+[2026-10-03T10:41:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.7 files_done=2 resolved=134 errors=128 current=crates/rmcp/tests/test_sse_concurrent_streams.rs
+[2026-10-03T10:42:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=3 resolved=437 errors=208 current=crates/rmcp/tests/test_tool_macros.rs
+[2026-10-03T11:02:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=26.9 files_done=5 resolved=3389 errors=1101 current=crates/rmcp/src/model/task.rs
+[2026-10-03T11:03:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=27.8 files_done=7 resolved=3596 errors=1144 current=crates/rmcp/tests/test_mrtr_behavior.rs
+[2026-10-03T11:05:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=29.8 files_done=8 resolved=3807 errors=1235 current=crates/rmcp/src/handler/server/router.rs
+[2026-10-03T11:05:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.6 files_done=9 resolved=3843 errors=1274 current=crates/rmcp/tests/test_handler_wrappers.rs
+[2026-10-03T11:08:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.4 files_done=12 resolved=4255 errors=1403 current=crates/rmcp/src/transport/auth/enterprise_tests.rs
+[2026-10-03T11:13:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.8 files_done=13 resolved=4658 errors=1608 current=crates/rmcp/src/transport/streamable_http_server/tower.rs
+[2026-10-03T11:18:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.7 files_done=14 resolved=5265 errors=1830 current=crates/rmcp/src/transport/streamable_http_client.rs
+[2026-10-03T11:21:12Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=45.9 files_done=15 resolved=5756 errors=1973 current=crates/rmcp/tests/test_subscriptions_streamable_http.rs
+[2026-10-03T11:21:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.5 files_done=16 resolved=5832 errors=2003 current=crates/rmcp/tests/test_sep_2260_stream_routing.rs
+[2026-10-03T11:22:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=47.4 files_done=18 resolved=6017 errors=2045 current=crates/rmcp/src/transport/common/unix_socket.rs
+[2026-10-03T11:23:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.0 files_done=20 resolved=6155 errors=2070 current=crates/rmcp/src/model/request_state.rs
+[2026-10-03T11:27:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=51.7 files_done=21 resolved=6519 errors=2238 current=crates/rmcp/tests/test_custom_request.rs
+[2026-10-03T11:28:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=52.8 files_done=23 resolved=6693 errors=2289 current=crates/rmcp/tests/test_elicitation.rs
+[2026-10-03T11:33:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=57.7 files_done=24 resolved=7214 errors=2515 current=examples/servers/src/complex_auth_streamhttp.rs
+[2026-10-03T11:35:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.3 files_done=26 resolved=7728 errors=2630 current=crates/rmcp/tests/test_streamable_http_malformed_json_request.rs
+[2026-10-03T11:36:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.8 files_done=28 resolved=7842 errors=2655 current=crates/rmcp/src/transport/common/client_side_sse.rs
+[2026-10-03T11:36:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.4 files_done=29 resolved=8021 errors=2678 current=crates/rmcp/src/service/client.rs
+[2026-10-03T11:43:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=68.2 files_done=30 resolved=8438 errors=2996 current=crates/rmcp/src/service.rs
+[2026-10-03T11:46:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.2 files_done=31 resolved=8768 errors=3127 current=crates/rmcp/tests/test_custom_headers.rs
+[2026-10-03T11:49:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.3 files_done=32 resolved=9213 errors=3272 current=examples/simple-chat-client/src/bin/simple_chat.rs
+[2026-10-03T11:50:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.1 files_done=35 resolved=9327 errors=3308 current=crates/rmcp/src/service/server.rs
+[2026-10-03T11:52:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.3 files_done=36 resolved=9444 errors=3410 current=crates/rmcp/tests/test_sampling.rs
+[2026-10-03T11:54:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=79.3 files_done=37 resolved=9669 errors=3504 current=crates/rmcp/tests/test_deserialization.rs
+[2026-10-03T11:55:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.1 files_done=38 resolved=9755 errors=3540 current=crates/rmcp/src/transport/streamable_http_server/session/local.rs
+[2026-10-03T11:57:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=82.0 files_done=39 resolved=9980 errors=3628 current=examples/servers/src/sampling_stdio.rs
+[2026-10-03T11:58:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.4 files_done=41 resolved=10120 errors=3691 current=conformance/src/bin/server.rs
+[2026-10-03T12:02:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=87.6 files_done=42 resolved=10604 errors=3890 current=crates/rmcp/src/model.rs
+[2026-10-03T12:07:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=91.8 files_done=43 resolved=11276 errors=4082 current=crates/rmcp/src/model/elicitation_schema.rs
+[2026-10-03T12:10:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.5 files_done=44 resolved=11645 errors=4250 current=crates/rmcp/tests/test_streamable_http_standard_headers.rs
+[2026-10-03T12:11:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.2 files_done=45 resolved=11776 errors=4286 current=examples/servers/src/common/counter.rs
+[2026-10-03T12:12:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.8 files_done=46 resolved=11865 errors=4312 current=crates/rmcp/tests/test_streamable_http_stale_session.rs
+[2026-10-03T12:12:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=97.6 files_done=47 resolved=11996 errors=4349 current=crates/rmcp/tests/test_logging.rs
+[2026-10-03T12:14:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=98.7 files_done=49 resolved=12258 errors=4398 current=crates/rmcp/tests/test_protocol_version_negotiation.rs
+[2026-10-03T12:14:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=99.3 files_done=50 resolved=12298 errors=4429 current=examples/servers/src/completion_stdio.rs
+[2026-10-03T12:15:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.3 files_done=52 resolved=12628 errors=4475 current=crates/rmcp/tests/test_request_timeout_progress.rs
+[2026-10-03T12:16:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=101.1 files_done=53 resolved=12664 errors=4512 current=examples/servers/src/progress_demo.rs
+[2026-10-03T12:19:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.8 files_done=55 resolved=12952 errors=4635 current=crates/rmcp/tests/test_client_lifecycle_modes.rs
+[2026-10-03T12:22:08Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.8 files_done=56 resolved=13100 errors=4775 current=crates/rmcp/tests/test_streamable_http_get_stream_auth_challenge.rs
+[2026-10-03T12:23:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=108.3 files_done=60 resolved=13204 errors=4844 current=crates/rmcp/tests/test_prompt_macros.rs
+[2026-10-03T12:25:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.7 files_done=62 resolved=13417 errors=4912 current=crates/rmcp/tests/test_prompt_routers.rs
+[2026-10-03T12:26:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.8 files_done=64 resolved=13606 errors=4960 current=crates/rmcp/src/transport/child_process.rs
+[2026-10-03T12:26:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=111.6 files_done=66 resolved=13737 errors=4996 current=examples/servers/src/elicitation_enum_inference.rs
+[2026-10-03T12:27:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.2 files_done=70 resolved=13878 errors=5025 current=crates/rmcp/tests/test_message_protocol.rs
+[2026-10-03T12:29:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.8 files_done=71 resolved=13959 errors=5098 current=crates/rmcp/tests/test_streamable_http_session_store.rs
+[2026-10-03T12:29:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.3 files_done=72 resolved=14098 errors=5122 current=crates/rmcp/src/transport/auth/enterprise.rs
+[2026-10-03T12:30:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.6 files_done=73 resolved=14249 errors=5181 current=crates/rmcp/tests/test_streamable_http_event_store.rs
+[2026-10-03T12:31:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.1 files_done=77 resolved=14435 errors=5206 current=conformance/src/bin/client.rs
+[2026-10-03T12:34:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.4 files_done=78 resolved=14635 errors=5360 current=crates/rmcp/tests/test_streamable_http_connection_reuse.rs
+[2026-10-03T12:35:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.3 files_done=80 resolved=14786 errors=5399 current=crates/rmcp/tests/test_subscriptions.rs
+[2026-10-03T12:37:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.8 files_done=81 resolved=14924 errors=5471 current=examples/simple-chat-client/src/tool.rs
+[2026-10-03T12:38:10Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.8 files_done=83 resolved=15040 errors=5517 current=crates/rmcp/src/model/mrtr.rs
+[2026-10-03T12:38:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.4 files_done=85 resolved=15149 errors=5540 current=crates/rmcp/src/handler/server/tool.rs
+[2026-10-03T12:40:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.9 files_done=87 resolved=15296 errors=5613 current=crates/rmcp/src/transport/worker.rs
+[2026-10-03T12:40:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.6 files_done=88 resolved=15416 errors=5644 current=crates/rmcp/tests/test_client_credentials.rs
+[2026-10-03T12:41:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.2 files_done=89 resolved=15545 errors=5672 current=examples/servers/src/common/task_demo.rs
+[2026-10-03T12:42:55Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.6 files_done=91 resolved=15625 errors=5735 current=crates/rmcp/tests/test_client_initialization.rs
+[2026-10-03T12:43:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.2 files_done=92 resolved=15650 errors=5766 current=crates/rmcp/src/task_manager.rs
+[2026-10-03T12:46:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=131.0 files_done=93 resolved=15924 errors=5897 current=crates/rmcp/src/handler/server/tool_name_validation.rs
+[2026-10-03T12:47:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=132.5 files_done=95 resolved=16167 errors=5965 current=crates/rmcp/src/model/extension.rs
+[2026-10-03T12:49:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.3 files_done=98 resolved=16293 errors=6049 current=examples/simple-chat-client/src/chat.rs
+[2026-10-03T12:50:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=134.9 files_done=100 resolved=16467 errors=6076 current=crates/rmcp/tests/test_task.rs
+[2026-10-03T12:51:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=135.9 files_done=101 resolved=16563 errors=6122 current=examples/clients/src/streamable_http.rs
+[2026-10-03T12:53:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=138.5 files_done=103 resolved=16637 errors=6243 current=crates/rmcp-macros/src/prompt.rs
+[2026-10-03T12:54:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.2 files_done=105 resolved=16766 errors=6277 current=examples/servers/src/simple_auth_streamhttp.rs
+[2026-10-03T12:55:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=139.9 files_done=109 resolved=16953 errors=6306 current=crates/rmcp/tests/test_sep_2260_request_association.rs
+[2026-10-03T12:55:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=140.5 files_done=110 resolved=17018 errors=6335 current=crates/rmcp/src/model/content.rs
+[2026-10-03T12:56:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=141.2 files_done=112 resolved=17138 errors=6370 current=examples/clients/src/auth/client_credentials.rs
+[2026-10-03T12:57:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.0 files_done=117 resolved=17335 errors=6407 current=crates/rmcp/tests/test_stdio_response_concurrency.rs
+[2026-10-03T12:57:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=142.6 files_done=120 resolved=17457 errors=6435 current=examples/servers/src/prompt_stdio.rs
+[2026-10-03T12:59:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=143.7 files_done=122 resolved=17570 errors=6484 current=examples/clients/src/task_stdio.rs
+[2026-10-03T12:59:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=144.5 files_done=127 resolved=17745 errors=6522 current=crates/rmcp/src/model/capabilities.rs
+[2026-10-03T13:00:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.3 files_done=135 resolved=18126 errors=6557 current=crates/rmcp/tests/test_trace_context.rs
+[2026-10-03T13:01:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=145.9 files_done=137 resolved=18304 errors=6585 current=examples/servers/src/structured_output.rs
+[2026-10-03T13:02:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=146.7 files_done=141 resolved=18430 errors=6620 current=crates/rmcp/src/transport.rs
+[2026-10-03T13:02:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.2 files_done=143 resolved=18522 errors=6644 current=examples/simple-chat-client/src/config.rs
+[2026-10-03T13:03:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=147.7 files_done=148 resolved=18635 errors=6668 current=crates/rmcp/src/model/prompt.rs
+[2026-10-03T13:03:35Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.2 files_done=151 resolved=18726 errors=6692 current=crates/rmcp/tests/test_close_connection.rs
+[2026-10-03T13:04:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=148.8 files_done=154 resolved=18885 errors=6717 current=crates/rmcp/tests/test_subscriptions_model.rs
+[2026-10-03T13:05:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=149.8 files_done=155 resolved=18948 errors=6763 current=examples/transport/src/common/calculator.rs
+[2026-10-03T13:05:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=150.5 files_done=162 resolved=19009 errors=6798 current=examples/servers/src/elicitation_stdio.rs
+[2026-10-03T13:06:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.3 files_done=166 resolved=19150 errors=6832 current=examples/clients/src/collection.rs
+[2026-10-03T13:07:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=151.9 files_done=169 resolved=19237 errors=6862 current=crates/rmcp/tests/test_server_discover.rs
+[2026-10-03T13:07:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=152.6 files_done=172 resolved=19318 errors=6893 current=crates/rmcp/tests/test_auth_error_classification.rs
+[2026-10-03T13:08:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.1 files_done=176 resolved=19436 errors=6917 current=crates/rmcp-macros/src/prompt_router.rs
+[2026-10-03T13:09:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=153.9 files_done=183 resolved=19556 errors=6955 current=crates/rmcp/tests/test_streamable_http_4xx_error_body.rs
+[2026-10-03T13:09:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=154.6 files_done=185 resolved=19630 errors=6985 current=crates/rmcp/tests/test_streamable_http_empty_2xx_notification.rs
+[2026-10-03T13:10:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=155.1 files_done=192 resolved=19707 errors=7011 current=examples/clients/src/subscriptions_streamhttp.rs
+[2026-10-03T13:10:55Z] [iter=1] Target type resolved target_type=call_site resolved=19741 errors=7021 secs=9273 mem_mb=997 MB
+[2026-10-03T13:10:55Z] [iter=1] Resolving target type target_type=import_statement count=487
+[2026-10-03T13:11:09Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=155.8 files_done=1 resolved=1 errors=0 current=crates/rmcp/tests/test_client_initialization.rs
+[2026-10-03T13:11:39Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=156.3 files_done=43 resolved=211 errors=0 current=crates/rmcp/src/handler/server/router.rs
+[2026-10-03T13:12:08Z] [iter=1] Target type resolved target_type=import_statement resolved=464 errors=0 secs=73 mem_mb=997 MB
+[2026-10-03T13:12:08Z] [iter=1] Resolving target type target_type=implements_clause count=501
+[2026-10-03T13:12:10Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=156.8 files_done=0 resolved=0 errors=0 current=crates/rmcp/src/handler/server/router/tool.rs
+[2026-10-03T13:12:41Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=157.3 files_done=10 resolved=240 errors=0 current=crates/rmcp/src/handler/server.rs
+[2026-10-03T13:13:01Z] [iter=1] Target type resolved target_type=implements_clause resolved=501 errors=0 secs=53 mem_mb=997 MB
+[2026-10-03T13:14:17Z] [iter=1] Step 5: Writing final enrichment file triples=249718
+[2026-10-03T13:14:20Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/ae2f9c9b45a2c98d24ee345406e79f507c9f9282.nq.gz size_kb=6093
+[2026-10-03T13:14:20Z] [iter=1] PHASE END: enrich elapsed_s=9539 elapsed_min=159.0 total_triples=249718
