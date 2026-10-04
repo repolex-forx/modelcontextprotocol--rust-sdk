@@ -1,0 +1,11 @@
+{
+  "org": "modelcontextprotocol",
+  "repo": "rust-sdk",
+  "versions": [
+    {
+      "commit": "ae2f9c9b45a2c98d24ee345406e79f507c9f9282",
+      "tag": "main",
+      "parsed_at": "2026-10-04T14:34:41.132839+00:00"
+    }
+  ]
+}
