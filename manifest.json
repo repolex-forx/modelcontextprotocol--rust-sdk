@@ -913,7 +913,9 @@
           "source": "lsp",
           "install_path": "/home/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tower-service-0.3.3/src/lib.rs"
         }
-      ]
+      ],
+      "repolex": "aggregate/repolex/ae2f9c9b45a2c98d24ee345406e79f507c9f9282/chunk-001.nq.gz",
+      "dep": "dep/ae2f9c9b45a2c98d24ee345406e79f507c9f9282.nq.gz"
     }
   ],
   "commit": "commit/commit.nq.gz",

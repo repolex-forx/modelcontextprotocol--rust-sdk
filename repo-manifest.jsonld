@@ -8,8 +8,9 @@
     {
       "@id": "https://repolex.ai/r/modelcontextprotocol/rust-sdk/commit/ae2f9c9b45a2c98d24ee345406e79f507c9f9282",
       "git:hexsha": "ae2f9c9b45a2c98d24ee345406e79f507c9f9282",
-      "repolex:parseStatus": "enrich_complete",
-      "git:tagName": "main"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "main",
+      "repolex:parsedAt": "2026-10-04T14:34:41.132029+00:00"
     },
     {
       "@id": "https://repolex.ai/r/modelcontextprotocol/rust-sdk/commit/57d1ac94a01cc210a55f8ac41fba41594d9914b6",
